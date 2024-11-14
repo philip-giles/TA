@@ -1,0 +1,188 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Light greyish-blue */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a4cfc; /* Vibrant purple */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+header .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0; /* Ensure there's no bottom margin */
+}
+
+header h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px; /* Adds a gap between h1 and h3 */
+    margin-bottom: 20px; /* Optional: Adds space below h3 */
+}
+
+/* Add Google Fonts for 'Montserrat' */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+/* Main Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Form Section Styling */
+section {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Titles */
+section h2 {
+    font-size: 1.8em;
+    color: #6a4cfc;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Elements */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #dcdfe6; /* Light grey */
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #6a4cfc; /* Purple focus effect */
+}
+
+button {
+    background-color: #6a4cfc; /* Vibrant purple */
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5334cc; /* Slightly darker purple */
+}
+
+/* Input Placeholder Styling */
+input::placeholder,
+select::placeholder {
+    color: #aaa;
+}
+
+/* Client List Styling */
+#client-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#client-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+#client-list li h3 {
+    font-size: 1.3em;
+    color: #333;
+}
+
+/* Transaction Table Styling */
+#transaction-history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#transaction-history th, #transaction-history td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dcdfe6;
+}
+
+#transaction-history th {
+    background-color: #6a4cfc; /* Purple header */
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+#transaction-history td {
+    background-color: #f9f9f9;
+}
+
+#transaction-history tr:nth-child(even) {
+    background-color: #f1f3f8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    input, select, button {
+        font-size: 1em;
+    }
+}
